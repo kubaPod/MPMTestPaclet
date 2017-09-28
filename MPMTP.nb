@@ -18,6 +18,8 @@ Cell[BoxData[{
      RowBox[{"$projectDir", ",", "$projectName"}], "}"}], "]"}]}], 
   ";"}]}], "Input",ExpressionUUID->"0bacf90b-4540-47b2-8d20-61bcc54c8774"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[{
  RowBox[{
   RowBox[{"CreateDirectory", "@", "$pacletDir"}], "\[IndentingNewLine]", 
@@ -34,6 +36,17 @@ Cell[BoxData[{
      RowBox[{"$projectName", "<>", "\"\<.m\>\""}]}], "}"}], 
    "]"}]}], "\[IndentingNewLine]"}], \
 "Input",ExpressionUUID->"1a3f8c08-7d2f-4f78-a45b-4cdc530607f7"],
+
+Cell[BoxData["\<\"E:\\\\Idea \
+Projects\\\\MPMTestPaclet\\\\MPMTestPaclet\"\>"], \
+"Output",ExpressionUUID->"b4861ffd-bfc4-48f7-96e6-7ff521aa6b5d"],
+
+Cell[BoxData["\<\"E:\\\\Idea \
+Projects\\\\MPMTestPaclet\\\\MPMTestPaclet\\\\MPMTestPaclet.m\"\>"], \
+"Output",ExpressionUUID->"a645634f-811e-446c-82e7-7fe7a1a34c7b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
@@ -62,18 +75,152 @@ Cell[BoxData[
    "]"}], "\n"}]], \
 "Input",ExpressionUUID->"5ccc83e4-14d2-40f7-a14e-03baf9a106df"],
 
+Cell[BoxData["\<\"E:\\\\Idea \
+Projects\\\\MPMTestPaclet\\\\MPMTestPaclet\\\\PacletInfo.m\"\>"], \
+"Output",ExpressionUUID->"7ad77dc1-c6de-4576-a987-27fb47c86ae9"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<GitLink`\>\"", 
+  "]"}]], "Input",ExpressionUUID->"bd921a48-9f93-40b5-bdf3-40a119cdd09f"],
+
 Cell[CellGroupData[{
 
-Cell[BoxData["$WolframID"], \
-"Input",ExpressionUUID->"8d75ce15-9978-44ef-9b29-a48029ef14c2"],
+Cell[BoxData[
+ RowBox[{"repo", "=", 
+  RowBox[{"GitOpen", "@", 
+   RowBox[{
+   "NotebookDirectory", "[", 
+    "]"}]}]}]], \
+"Input",ExpressionUUID->"dffd2e86-db35-40fc-ad04-5fcbbedf6bf6"],
 
-Cell[BoxData["None"], \
-"Output",ExpressionUUID->"2a62a598-a38b-4775-9f77-6fbfee459b9b"]
+Cell[BoxData[
+ TemplateBox[{RowBox[{"\[LeftAssociation]", 
+     RowBox[{
+       RowBox[{"\"BareQ\"", "\[Rule]", "False"}], ",", 
+       RowBox[{
+        "\"GitDirectory\"", "\[Rule]", 
+         "\"E:\\\\Idea Projects\\\\MPMTestPaclet\\\\.git\\\\\""}], ",", 
+       RowBox[{
+        "\"WorkingDirectory\"", "\[Rule]", 
+         "\"E:\\\\Idea Projects\\\\MPMTestPaclet\\\\\""}]}], 
+     "\[RightAssociation]"}]},
+  "GitRepo",
+  DisplayFunction->(TooltipBox[
+    PanelBox[
+     GridBox[{{
+        GraphicsBox[{
+          EdgeForm[
+           GrayLevel[0.5]], 
+          GrayLevel[0.5], 
+          Thickness[0.1], 
+          LineBox[{{0, 0}, {5, 0}}], 
+          LineBox[{{0, 0}, {5, -3}}], 
+          GrayLevel[0.85], 
+          DiskBox[{0, 0}, 1], 
+          DiskBox[{5, 0}, 1], 
+          RGBColor[0, 1, 0], 
+          DiskBox[{5, -3}, 1]}, ImageSize -> 15], 
+        "\"E:\\\\Idea Projects\\\\MPMTestPaclet\\\\\""}}, 
+      BaselinePosition -> {1, 2}], FrameMargins -> 5, BaselinePosition -> 
+     Baseline], 
+    "GitRepo[<|\"BareQ\" -> False, \"GitDirectory\" -> \"E:\\\\Idea \
+Projects\\\\MPMTestPaclet\\\\.git\\\\\", \"WorkingDirectory\" -> \"E:\\\\Idea \
+Projects\\\\MPMTestPaclet\\\\\"|>]"]& )]], \
+"Output",ExpressionUUID->"3ce3ed3a-f667-4ea6-8a3c-100a20d40fa4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GitAdd", "[", 
+   RowBox[{"repo", ",", "All"}], "]"}], " ", 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"fails", "!"}], " ", "needs", " ", "to", " ", "be", " ", "done", 
+    " ", "manually"}], 
+   "*)"}]}]], "Input",ExpressionUUID->"41b1d054-0258-4699-9d93-ff403626e2cc"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  "}"}]], "Output",ExpressionUUID->"f173d6f5-8a98-4b67-9810-0f3c7a8ec57d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GitCommit", "[", 
+  RowBox[{"repo", ",", "\"\<init\>\""}], 
+  "]"}]], "Input",ExpressionUUID->"65a032e9-ab49-47c2-a1af-f81ad9640809"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   TooltipBox[
+    FrameBox[
+     TemplateBox[{
+      StyleBox["\"Commit\"", Italic, StripOnInput -> False],"\": \"",
+       "\"55d963ed\"","\"\[Ellipsis]\""},
+      "RowDefault"],
+     Background->RGBColor[0.9, 1., 0.9],
+     BaseStyle->"Panel",
+     BaselinePosition->Baseline,
+     FrameMargins->{{5, 5}, {3, 3}},
+     FrameStyle->GrayLevel[0.8],
+     RoundingRadius->5,
+     StripOnInput->False],
+    TemplateBox[{
+     "\"Commit\"", "\" in \"", "\"E:\\\\Idea Projects\\\\MPMTestPaclet\\\\\"",
+       "\": \"", 
+      StyleBox[
+      "\"55d963ed48de9c29185b2e620b35819c2a51a769\"", Bold, StripOnInput -> 
+       False]}, "RowDefault"],
+    TooltipStyle->"TextStyling"],
+   Annotation[#, 
+    Row[{"Commit", " in ", "E:\\Idea Projects\\MPMTestPaclet\\", ": ", 
+      Style["55d963ed48de9c29185b2e620b35819c2a51a769", Bold]}], "Tooltip"]& ],
+  GitLink`GitObject["55d963ed48de9c29185b2e620b35819c2a51a769", 
+   GitLink`GitRepo[
+    Association[
+    "BareQ" -> False, "GitDirectory" -> 
+     "E:\\Idea Projects\\MPMTestPaclet\\.git\\", "WorkingDirectory" -> 
+     "E:\\Idea Projects\\MPMTestPaclet\\"]]]]], \
+"Output",ExpressionUUID->"92a0760e-ce02-44c1-a891-1813a561d862"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GitStatus", "@", 
+  "repo"}]], "Input",ExpressionUUID->"f1aedd50-a51d-42a1-a553-2dcc192a60f3"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"New\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"Modified\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"Deleted\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"TypeChange\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"IndexNew\"\>", "\[Rule]", 
+    RowBox[{"{", "\<\"sub\\\\test.m\"\>", "}"}]}], ",", 
+   RowBox[{"\<\"IndexModified\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"IndexDeleted\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"\<\"IndexTypeChange\"\>", "\[Rule]", 
+    RowBox[{"{", "}"}]}]}], 
+  "\[RightAssociation]"}]], \
+"Output",ExpressionUUID->"6ba22d1b-0669-482c-9eda-69d109993eb5"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{775, 873},
-WindowMargins->{{482, Automatic}, {Automatic, 74}},
+WindowMargins->{{Automatic, 478}, {4, Automatic}},
 PrivateNotebookOptions->{"FileOutlineCache"->False},
 TrackCellChangeTimes->False,
 FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
