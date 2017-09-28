@@ -1,0 +1,82 @@
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Project init", \
+"Subsection",ExpressionUUID->"c0c86174-359e-4cbc-993a-d937943aceb4"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"$projectName", "=", "\"\<MPMTestPaclet\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"$projectDir", "=", " ", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"$pacletDir", "=", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{"$projectDir", ",", "$projectName"}], "}"}], "]"}]}], 
+  ";"}]}], "Input",ExpressionUUID->"0bacf90b-4540-47b2-8d20-61bcc54c8774"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"CreateDirectory", "@", "$pacletDir"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"CreateDirectory", "@", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{"$pacletDir", ",", "\"\<Kernel\>\""}], "}"}], "]"}]}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"CreateFile", "@", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{"$pacletDir", ",", 
+     RowBox[{"$projectName", "<>", "\"\<.m\>\""}]}], "}"}], 
+   "]"}]}], "\[IndentingNewLine]"}], \
+"Input",ExpressionUUID->"1a3f8c08-7d2f-4f78-a45b-4cdc530607f7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{"$pacletDir", ",", "\"\<PacletInfo.m\>\""}], "}"}], "]"}], 
+    "\[IndentingNewLine]", ",", 
+    RowBox[{"Paclet", "[", 
+     RowBox[{
+      RowBox[{"\"\<Name\>\"", "\[Rule]", "$projectName"}], 
+      "\[IndentingNewLine]", ",", 
+      RowBox[{"\"\<Version\>\"", "\[Rule]", "\"\<0.0.1\>\""}], 
+      "\[IndentingNewLine]", ",", 
+      RowBox[{"\"\<MathematicaVersion\>\"", "\[Rule]", "\"\<11+\>\""}], 
+      "\[IndentingNewLine]", ",", 
+      RowBox[{"\"\<Description\>\"", "\[Rule]", "\"\<\>\""}], 
+      "\[IndentingNewLine]", ",", 
+      RowBox[{
+      "\"\<Creator\>\"", "\[Rule]", "\"\<Jakub (Kuba) Podkalicki\>\""}], 
+      "\[IndentingNewLine]", ",", 
+      RowBox[{"\"\<Extensions\>\"", "\[Rule]", 
+       RowBox[{"{", "}"}]}]}], "\[IndentingNewLine]", "]"}], 
+    "\[IndentingNewLine]", ",", "\"\<Text\>\""}], "\[IndentingNewLine]", 
+   "]"}], "\n"}]], \
+"Input",ExpressionUUID->"5ccc83e4-14d2-40f7-a14e-03baf9a106df"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["$WolframID"], \
+"Input",ExpressionUUID->"8d75ce15-9978-44ef-9b29-a48029ef14c2"],
+
+Cell[BoxData["None"], \
+"Output",ExpressionUUID->"2a62a598-a38b-4775-9f77-6fbfee459b9b"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{775, 873},
+WindowMargins->{{482, Automatic}, {Automatic, 74}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+TrackCellChangeTimes->False,
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+
