@@ -160,16 +160,16 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{"\<\".gitignore\"\>", ",", "\<\".idea\\\\workspace.xml\"\>", 
-   ",", "\<\"MPMTP.nb\"\>", ",", "\<\"MPMTestPaclet\\\\PacletInfo.m\"\>"}], 
-  "}"}]], "Output",ExpressionUUID->"70dc580c-a7be-49e0-8528-53e4c098d137"]
+  RowBox[{"\<\".idea\\\\workspace.xml\"\>", ",", "\<\"MPMTP.nb\"\>", 
+   ",", "\<\"MPMTestPaclet\\\\PacletInfo.m\"\>"}], 
+  "}"}]], "Output",ExpressionUUID->"50dc74ad-4008-4241-8b2f-7a2be44f0cdb"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"GitCommit", "[", 
-  RowBox[{"repo", ",", "\"\<gitignore\>\""}], 
+  RowBox[{"repo", ",", "\"\<regular release\>\""}], 
   "]"}]], "Input",ExpressionUUID->"65a032e9-ab49-47c2-a1af-f81ad9640809"],
 
 Cell[BoxData[
@@ -179,7 +179,7 @@ Cell[BoxData[
     FrameBox[
      TemplateBox[{
       StyleBox["\"Commit\"", Italic, StripOnInput -> False],"\": \"",
-       "\"35d2580a\"","\"\[Ellipsis]\""},
+       "\"4f645359\"","\"\[Ellipsis]\""},
       "RowDefault"],
      Background->RGBColor[0.9, 1., 0.9],
      BaseStyle->"Panel",
@@ -192,19 +192,19 @@ Cell[BoxData[
      "\"Commit\"", "\" in \"", "\"E:\\\\Idea Projects\\\\MPMTestPaclet\\\\\"",
        "\": \"", 
       StyleBox[
-      "\"35d2580a96866e4695d0c05c685b900be6e1db6c\"", Bold, StripOnInput -> 
+      "\"4f64535988c7d15c7b7e6a2bfd096b1082360579\"", Bold, StripOnInput -> 
        False]}, "RowDefault"],
     TooltipStyle->"TextStyling"],
    Annotation[#, 
     Row[{"Commit", " in ", "E:\\Idea Projects\\MPMTestPaclet\\", ": ", 
-      Style["35d2580a96866e4695d0c05c685b900be6e1db6c", Bold]}], "Tooltip"]& ],
-  GitLink`GitObject["35d2580a96866e4695d0c05c685b900be6e1db6c", 
+      Style["4f64535988c7d15c7b7e6a2bfd096b1082360579", Bold]}], "Tooltip"]& ],
+  GitLink`GitObject["4f64535988c7d15c7b7e6a2bfd096b1082360579", 
    GitLink`GitRepo[
     Association[
     "BareQ" -> False, "GitDirectory" -> 
      "E:\\Idea Projects\\MPMTestPaclet\\.git\\", "WorkingDirectory" -> 
      "E:\\Idea Projects\\MPMTestPaclet\\"]]]]], \
-"Output",ExpressionUUID->"e6b8c1ff-cff1-439b-af2f-9977f689ee45"]
+"Output",ExpressionUUID->"b95a9fd6-5079-4358-bf49-69297ba8b0a6"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -233,7 +233,7 @@ Cell[BoxData[
    RowBox[{"\<\"IndexTypeChange\"\>", "\[Rule]", 
     RowBox[{"{", "}"}]}]}], 
   "\[RightAssociation]"}]], \
-"Output",ExpressionUUID->"c6128619-5b02-401c-960c-03ab0ef57da1"]
+"Output",ExpressionUUID->"7deed90f-d479-4cff-be16-111bbde6a40a"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -259,7 +259,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"GitCreateTag", "[", 
   RowBox[{
-  "repo", ",", "\"\<v0.0.3\>\"", ",", "\"\<HEAD\>\"", ",", 
+  "repo", ",", "\"\<v0.0.4\>\"", ",", "\"\<HEAD\>\"", ",", 
    "\"\<release\>\""}], 
   "]"}]], "Input",ExpressionUUID->"93dbd908-d62c-475c-9d39-6ebaf5f8585e"],
 
@@ -270,7 +270,7 @@ Cell[BoxData[
     FrameBox[
      TemplateBox[{
       StyleBox["\"Tag\"", Italic, StripOnInput -> False],"\": \"",
-       "\"v0.0.3\"","\"\[Ellipsis]\""},
+       "\"v0.0.4\"","\"\[Ellipsis]\""},
       "RowDefault"],
      Background->RGBColor[0.9, 1., 0.9],
      BaseStyle->"Panel",
@@ -283,19 +283,19 @@ Cell[BoxData[
      "\"Tag\"", "\" in \"", "\"E:\\\\Idea Projects\\\\MPMTestPaclet\\\\\"", 
       "\": \"", 
       StyleBox[
-      "\"0079b78f57c45ae4d670df0ab6d2bf88c75c0cad\"", Bold, StripOnInput -> 
+      "\"685a469e57ffb286522aac72e749675b072b2a9a\"", Bold, StripOnInput -> 
        False]}, "RowDefault"],
     TooltipStyle->"TextStyling"],
    Annotation[#, 
     Row[{"Tag", " in ", "E:\\Idea Projects\\MPMTestPaclet\\", ": ", 
-      Style["0079b78f57c45ae4d670df0ab6d2bf88c75c0cad", Bold]}], "Tooltip"]& ],
-  GitLink`GitObject["0079b78f57c45ae4d670df0ab6d2bf88c75c0cad", 
+      Style["685a469e57ffb286522aac72e749675b072b2a9a", Bold]}], "Tooltip"]& ],
+  GitLink`GitObject["685a469e57ffb286522aac72e749675b072b2a9a", 
    GitLink`GitRepo[
     Association[
     "BareQ" -> False, "GitDirectory" -> 
      "E:\\Idea Projects\\MPMTestPaclet\\.git\\", "WorkingDirectory" -> 
      "E:\\Idea Projects\\MPMTestPaclet\\"]]]]], \
-"Output",ExpressionUUID->"4bb3c1d2-0925-4f5d-98dd-9544aeea9aeb"]
+"Output",ExpressionUUID->"38290167-3fac-4864-92ee-572d859cf876"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -308,8 +308,8 @@ Cell[BoxData[
 "Input",ExpressionUUID->"00e7dcc7-8df4-4198-8566-d4a81f77df0a"],
 
 Cell[BoxData["\<\"E:\\\\Idea \
-Projects\\\\MPMTestPaclet\\\\MPMTestPaclet-0.0.2.paclet\"\>"], \
-"Output",ExpressionUUID->"dd759038-9420-4a8b-b6e5-1a4d6f0f2384"]
+Projects\\\\MPMTestPaclet\\\\MPMTestPaclet-0.0.4.paclet\"\>"], \
+"Output",ExpressionUUID->"1648b026-e6d7-4594-ad3c-8affa4d248c1"]
 }, Open  ]],
 
 Cell[BoxData[
