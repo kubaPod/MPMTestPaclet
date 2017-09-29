@@ -71,7 +71,7 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"System`Name", "\[Rule]", "$projectName"}], 
       "\[IndentingNewLine]", ",", 
-      RowBox[{"System`Version", "\[Rule]", "\"\<0.0.2\>\""}], 
+      RowBox[{"System`Version", "\[Rule]", "\"\<0.0.4\>\""}], 
       "\[IndentingNewLine]", ",", 
       RowBox[{"System`MathematicaVersion", "\[Rule]", "\"\<11+\>\""}], 
       "\[IndentingNewLine]", ",", 
@@ -87,7 +87,7 @@ Cell[BoxData[
   "\n"}]], "Input",ExpressionUUID->"5ccc83e4-14d2-40f7-a14e-03baf9a106df"],
 
 Cell[BoxData["\<\"MPMTestPaclet\\\\PacletInfo.m\"\>"], \
-"Output",ExpressionUUID->"a0d9fb9b-0786-4f63-89dd-49475955deaa"]
+"Output",ExpressionUUID->"3f59dac9-280a-4652-9712-93c3d86b6dd2"]
 }, Open  ]]
 }, Open  ]],
 
@@ -146,6 +146,8 @@ Projects\\\\MPMTestPaclet\\\\\"|>]"]& )]], \
 "Output",ExpressionUUID->"f17bb69b-0f21-408c-8718-705f62050348"]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
  RowBox[{
   RowBox[{"GitAdd", "[", 
@@ -156,11 +158,18 @@ Cell[BoxData[
     " ", "manually"}], 
    "*)"}]}]], "Input",ExpressionUUID->"41b1d054-0258-4699-9d93-ff403626e2cc"],
 
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\".gitignore\"\>", ",", "\<\".idea\\\\workspace.xml\"\>", 
+   ",", "\<\"MPMTP.nb\"\>", ",", "\<\"MPMTestPaclet\\\\PacletInfo.m\"\>"}], 
+  "}"}]], "Output",ExpressionUUID->"70dc580c-a7be-49e0-8528-53e4c098d137"]
+}, Open  ]],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"GitCommit", "[", 
-  RowBox[{"repo", ",", "\"\<init\>\""}], 
+  RowBox[{"repo", ",", "\"\<gitignore\>\""}], 
   "]"}]], "Input",ExpressionUUID->"65a032e9-ab49-47c2-a1af-f81ad9640809"],
 
 Cell[BoxData[
@@ -170,7 +179,7 @@ Cell[BoxData[
     FrameBox[
      TemplateBox[{
       StyleBox["\"Commit\"", Italic, StripOnInput -> False],"\": \"",
-       "\"a2b68bf2\"","\"\[Ellipsis]\""},
+       "\"35d2580a\"","\"\[Ellipsis]\""},
       "RowDefault"],
      Background->RGBColor[0.9, 1., 0.9],
      BaseStyle->"Panel",
@@ -183,19 +192,19 @@ Cell[BoxData[
      "\"Commit\"", "\" in \"", "\"E:\\\\Idea Projects\\\\MPMTestPaclet\\\\\"",
        "\": \"", 
       StyleBox[
-      "\"a2b68bf2dd68079c135a0d4b83f574afac44594c\"", Bold, StripOnInput -> 
+      "\"35d2580a96866e4695d0c05c685b900be6e1db6c\"", Bold, StripOnInput -> 
        False]}, "RowDefault"],
     TooltipStyle->"TextStyling"],
    Annotation[#, 
     Row[{"Commit", " in ", "E:\\Idea Projects\\MPMTestPaclet\\", ": ", 
-      Style["a2b68bf2dd68079c135a0d4b83f574afac44594c", Bold]}], "Tooltip"]& ],
-  GitLink`GitObject["a2b68bf2dd68079c135a0d4b83f574afac44594c", 
+      Style["35d2580a96866e4695d0c05c685b900be6e1db6c", Bold]}], "Tooltip"]& ],
+  GitLink`GitObject["35d2580a96866e4695d0c05c685b900be6e1db6c", 
    GitLink`GitRepo[
     Association[
     "BareQ" -> False, "GitDirectory" -> 
      "E:\\Idea Projects\\MPMTestPaclet\\.git\\", "WorkingDirectory" -> 
      "E:\\Idea Projects\\MPMTestPaclet\\"]]]]], \
-"Output",ExpressionUUID->"87eaa48a-8d98-4470-beb3-1ff9469b66a7"]
+"Output",ExpressionUUID->"e6b8c1ff-cff1-439b-af2f-9977f689ee45"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -224,7 +233,19 @@ Cell[BoxData[
    RowBox[{"\<\"IndexTypeChange\"\>", "\[Rule]", 
     RowBox[{"{", "}"}]}]}], 
   "\[RightAssociation]"}]], \
-"Output",ExpressionUUID->"8f992bad-1d21-4963-a3fe-7ea9aaced02e"]
+"Output",ExpressionUUID->"c6128619-5b02-401c-960c-03ab0ef57da1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\<.gitignore\>\"", ",", "\"\<*.paclet\>\"", ",", "\"\<Text\>\""}], 
+  "]"}]], "Input",ExpressionUUID->"b2ae010d-d312-4214-a505-90c376524d8e"],
+
+Cell[BoxData["\<\".gitignore\"\>"], \
+"Output",ExpressionUUID->"ea6e5131-75ba-445f-a174-c90c8b17d497"]
 }, Open  ]]
 }, Open  ]],
 
@@ -238,8 +259,8 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"GitCreateTag", "[", 
   RowBox[{
-  "repo", ",", "\"\<v0.0.2\>\"", ",", "\"\<HEAD\>\"", ",", 
-   "\"\<initial release\>\""}], 
+  "repo", ",", "\"\<v0.0.3\>\"", ",", "\"\<HEAD\>\"", ",", 
+   "\"\<release\>\""}], 
   "]"}]], "Input",ExpressionUUID->"93dbd908-d62c-475c-9d39-6ebaf5f8585e"],
 
 Cell[BoxData[
@@ -249,7 +270,7 @@ Cell[BoxData[
     FrameBox[
      TemplateBox[{
       StyleBox["\"Tag\"", Italic, StripOnInput -> False],"\": \"",
-       "\"v0.0.2\"","\"\[Ellipsis]\""},
+       "\"v0.0.3\"","\"\[Ellipsis]\""},
       "RowDefault"],
      Background->RGBColor[0.9, 1., 0.9],
      BaseStyle->"Panel",
@@ -262,19 +283,19 @@ Cell[BoxData[
      "\"Tag\"", "\" in \"", "\"E:\\\\Idea Projects\\\\MPMTestPaclet\\\\\"", 
       "\": \"", 
       StyleBox[
-      "\"b92697950a464592dd2945bb14c8635311e6a858\"", Bold, StripOnInput -> 
+      "\"0079b78f57c45ae4d670df0ab6d2bf88c75c0cad\"", Bold, StripOnInput -> 
        False]}, "RowDefault"],
     TooltipStyle->"TextStyling"],
    Annotation[#, 
     Row[{"Tag", " in ", "E:\\Idea Projects\\MPMTestPaclet\\", ": ", 
-      Style["b92697950a464592dd2945bb14c8635311e6a858", Bold]}], "Tooltip"]& ],
-  GitLink`GitObject["b92697950a464592dd2945bb14c8635311e6a858", 
+      Style["0079b78f57c45ae4d670df0ab6d2bf88c75c0cad", Bold]}], "Tooltip"]& ],
+  GitLink`GitObject["0079b78f57c45ae4d670df0ab6d2bf88c75c0cad", 
    GitLink`GitRepo[
     Association[
     "BareQ" -> False, "GitDirectory" -> 
      "E:\\Idea Projects\\MPMTestPaclet\\.git\\", "WorkingDirectory" -> 
      "E:\\Idea Projects\\MPMTestPaclet\\"]]]]], \
-"Output",ExpressionUUID->"8d9fc61c-02f2-4fef-98cd-5f55b795eac2"]
+"Output",ExpressionUUID->"4bb3c1d2-0925-4f5d-98dd-9544aeea9aeb"]
 }, Open  ]],
 
 Cell[CellGroupData[{
